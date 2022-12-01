@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.mybrandlist{
+    margin: 0px auto 0px auto;
+    position: relative;
+    left: -100px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav>ul>li>a>i{
+    font-size: 25px;
+}
+header{
+    width: 100%;
+    background-color:#00bceb;;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 300;
+}
+header>button{
+    outline: none;
+    color: white;
+    background-color: #1e4471;
+    border: 1px solid #1e4471;
+    border-radius: 4em;
+    font-size: 17px;
+    margin-left: 6px;
+    margin-bottom: 0;
+    line-height: 1.37em;
+}
+button:focus{
+    outline:none;
+}
+.left-o-btn{
+    width: 50px;
+    height: 50px;
+     display: none;
+}
+.newresponsive{
+    background-color: #F4502050;
+}
+.head-close{
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .left-o-btn{
+        display: block;
+    }
+    .left-o-btn i{
+        font-size: 20px;
+        /* background-color: #0f0; */
+        display: block;
+        line-height: 50px;
+        text-align: center;
+    }
+    .bg2{
+        background-color: darkorange;
+    }
+    .myresponsive{
+       /* display: none; */
+       background-color: #0fffff;
+       position: absolute;
+       width: 100%;
+       height:100vh;
+       left: -100%;
+       top: 1px;
+       transition: all linear 0.3s;
+       z-index: 100;
+    }
+    .myresponsive .head-close{
+        display: block;
+        width: 50px;
+        height: 50px;
+        /* background-color: #1e4471; */
+        font-size: 2em;
+        position: relative;
+        left: 50em;
+        top: 10px;
+    }
+    .head-close > i{
+        /* background-color: aqua; */
+        display: block;
+        line-height: 50px;
+        text-align: center;
+    }
+    .myresponsive .navbar-nav{
+        padding: 20px;
+    }
+    .myresponsive .navbar-nav .nav-item{
+        /* background-color: #0f0; */
+        margin-left: 0px !important;
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+   .newresponsive .navbar-nav .nav-item{
+       margin-left: 0px !important;
+   }
+   .activeClass{
+       left: 0px;
+   }
+ }
+
